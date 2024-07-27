@@ -26,6 +26,14 @@ enum Theme: String {
         }
     }
     var mainColor: Color {
-        Color(rawValue)
+        var color: Color = Color(.white)
+        if (rawValue == "yellow") {
+            color = Color(.yellow)
+        } else if (rawValue == "poppy") {
+            color = Color(.red)
+        }else if (rawValue == "orange") {
+            color = Color(.orange)
+        }
+        return color
     }
 }

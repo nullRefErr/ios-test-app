@@ -40,6 +40,6 @@ struct MeetingView: View {
 
 struct MeetingView_Preview: PreviewProvider {
     static var previews: some View {
-        MeetingView()
+        return MeetingView()
     }
 }
